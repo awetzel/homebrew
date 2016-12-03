@@ -55,7 +55,7 @@ end
 
 __END__
 diff --git a/core/block_validator.go b/core/block_validator.go
-index 3353683..bf9770d 100644
+index 3353683..ccef0fe 100644
 --- a/core/block_validator.go
 +++ b/core/block_validator.go
 @@ -263,11 +263,7 @@ func ValidateHeader(config *params.ChainConfig, pow pow.PoW, header *types.Heade
@@ -67,7 +67,7 @@ index 3353683..bf9770d 100644
 -	} else {
 -		return calcDifficultyFrontier(time, parentTime, parentNumber, parentDiff)
 -	}
-+  return big.NewInt(0x0)
++  return big.NewInt(0x4000)
  }
  
  func calcDifficultyHomestead(time, parentTime uint64, parentNumber, parentDiff *big.Int) *big.Int {
